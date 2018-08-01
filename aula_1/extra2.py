@@ -5,10 +5,10 @@ def densidadedeprobabilidade(x, u, v):
     return np.exp(-(np.power((x-u),2))/2*np.power(v,2))/np.sqrt(2*np.pi*np.power(v,2))
 
 x = np.linspace(-10,10,500)
-y = np.linspace(-10,10,500)
-y1 = np.linspace(-10,10,500)
-y2 = np.linspace(-10,10,500)
-y3 = np.linspace(-10,10,500)
+y = np.zeros(500)
+y1 = np.zeros(500)
+y2 = np.zeros(500)
+y3 = np.zeros(500)
 
 for i, xis in enumerate(x):
 	y[i] = densidadedeprobabilidade(xis, 0, 1)
